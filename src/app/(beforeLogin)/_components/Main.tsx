@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./main.module.css";
-import keemLogo from "../../../public/keem-white.svg";
+import keemLogo from "/public/keem-white.svg";
 
 export default function Main() {
   return (
-    <main>
+    <>
       <div className={styles.left}>
         <Image src={keemLogo} alt="logo" className={styles.logo} />
       </div>
@@ -20,6 +20,6 @@ export default function Main() {
           로그인
         </Link>
       </div>
-    </main>
+    </>
   );
 }
