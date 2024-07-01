@@ -1,7 +1,6 @@
 .container {
   display: flex;
   align-items: stretch;
-  background-color: #fff;
 }
 
 .leftSectionWrapper {
@@ -14,7 +13,6 @@
 .leftSection {
   width: 275px;
   height: 100dvh;
-  background-color: sandybrown;
 }
 
 .leftSectionFixed {

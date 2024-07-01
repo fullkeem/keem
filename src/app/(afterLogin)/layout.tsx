@@ -2,9 +2,11 @@ import { ReactNode } from "react";
 import style from "./layout.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import KEEM from "/public/keem-black.svg";
+import KEEM from "/public/keem-white.svg";
 import NavMenu from "./_components/navMenu/NavMenu";
 import LogoutButton from "./_components/logoutButton/LogoutButton";
+import TrendList from "./_components/trendList/TrendList";
+import FollowRecommend from "./_components/followRecommend/FollowRecommend";
 
 type Props = {
   children: ReactNode;
@@ -37,7 +39,6 @@ export default function AfterLoginLayout({ children }: Props) {
             </nav>
             <LogoutButton />
           </div>
-          왼쪽 섹션
         </section>
       </header>
       <div className={style.rightSectionWrapper}>
@@ -52,7 +53,8 @@ export default function AfterLoginLayout({ children }: Props) {
               </svg>
               <input type="search" name="" id="" />
             </form>
-            사이드 바
+            <TrendList />
+            <FollowRecommend />
           </section>
         </div>
       </div>
