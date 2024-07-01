@@ -3,7 +3,7 @@ import style from "./layout.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import KEEM from "/public/keem-black.svg";
-import NavMenu from "./_components/NavMenu";
+import NavMenu from "./_components/navMenu/NavMenu";
 
 type Props = {
   children: ReactNode;
