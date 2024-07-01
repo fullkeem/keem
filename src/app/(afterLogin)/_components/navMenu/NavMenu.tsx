@@ -1,6 +1,6 @@
 "use client";
 
-import NavMenuItem from "./navMenuItem";
+import NavMenuItem from "./NavMenuItem";
 import { useSelectedLayoutSegment } from "next/navigation";
 
 export default function NavMenu() {

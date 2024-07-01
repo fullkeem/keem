@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import KEEM from "/public/keem-black.svg";
 import NavMenu from "./_components/navMenu/NavMenu";
+import LogoutButton from "./_components/logoutButton/LogoutButton";
 
 type Props = {
   children: ReactNode;
@@ -34,7 +35,7 @@ export default function AfterLoginLayout({ children }: Props) {
                 게시하기
               </Link>
             </nav>
-            <div>로그아웃 버튼</div>
+            <LogoutButton />
           </div>
           왼쪽 섹션
         </section>
