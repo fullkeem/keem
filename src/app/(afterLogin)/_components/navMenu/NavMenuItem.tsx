@@ -10,8 +10,8 @@ type Props = {
   href: string;
   label: string;
   segment: string;
+  currentSegment: null | string;
   iconPaths: IconPaths;
-  currentSegment: string;
 };
 
 export default function NavMenuItem({
@@ -21,18 +21,28 @@ export default function NavMenuItem({
   iconPaths,
   currentSegment,
 }: Props) {
-  const isActive = segment === currentSegment;
   return (
     <li>
       <Link href={href}>
-        <div className={style.navList}>
-          <svg viewBox="0 0 24 24" aria-hidden="true" className={style.icon}>
-            <g>
-              <path d={isActive ? iconPaths.active : iconPaths.inactive}></path>
-            </g>
-          </svg>
-          <div>{label}</div>
-        </div>
+        {currentSegment === segment ? (
+          <div className={style.navList}>
+            <svg viewBox="0 0 24 24" aria-hidden="true" className={style.icon}>
+              <g>
+                <path d={iconPaths.active}></path>
+              </g>
+            </svg>
+            <div style={{ fontWeight: "bold" }}>{label}</div>
+          </div>
+        ) : (
+          <div className={style.navList}>
+            <svg viewBox="0 0 24 24" aria-hidden="true" className={style.icon}>
+              <g>
+                <path d={iconPaths.inactive}></path>
+              </g>
+            </svg>
+            <div>{label}</div>
+          </div>
+        )}
       </Link>
     </li>
   );
