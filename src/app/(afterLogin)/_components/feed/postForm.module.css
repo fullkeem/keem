@@ -1,0 +1,78 @@
+.postForm {
+  display: flex;
+  padding: 16px 16px 8px;
+  border-color: rgb(239, 243, 244);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+@media (prefers-color-scheme: dark) {
+  .postForm {
+    border-color: rgb(47, 51, 54);
+  }
+}
+
+.postUserSection {
+  margin-right: 10px;
+}
+
+.postUserImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.postUserImage img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.postingSection {
+  flex-grow: 1;
+}
+
+.postInputSection {
+  width: 100%;
+  flex-grow: 1;
+  overflow: hidden auto;
+}
+
+.input {
+  width: inherit;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  color: #71767b;
+  font-size: 20px;
+}
+
+.postButtonSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.postButton {
+  width: 94px;
+  height: 36px;
+  background-color: rgb(29, 155, 240);
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 15px;
+}
+.postButton:hover {
+  background-color: rgb(26, 140, 216);
+  cursor: pointer;
+}
+
+.uploadButton {
+  border: 0;
+  background-color: transparent;
+}
+
+.uploadButton svg {
+  fill: rgb(29, 155, 240);
+}
