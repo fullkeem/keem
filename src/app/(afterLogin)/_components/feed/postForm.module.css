@@ -1,5 +1,6 @@
 .postForm {
   display: flex;
+  margin-top: 100px;
   padding: 16px 16px 8px;
   border-color: rgb(239, 243, 244);
   border-bottom-width: 1px;
@@ -39,11 +40,16 @@
 
 .input {
   width: inherit;
-  padding: 10px 5px;
+  padding: 10px 10px;
   border: none;
   outline: none;
   color: #71767b;
   font-size: 20px;
+  line-height: 24px;
+}
+
+.input::placeholder {
+  font-family: Malgun Gothic;
 }
 
 .postButtonSection {
@@ -53,26 +59,52 @@
   margin-top: 10px;
 }
 
-.postButton {
+.uploadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(29, 155, 240, 0.01);
+  border: 0;
+  border-radius: 17px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.uploadButton:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.uploadButton svg {
+  fill: rgb(29, 155, 240);
+}
+
+.actionButton:disabled {
+  opacity: 0.5;
+}
+.actionButton {
   width: 94px;
   height: 36px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 18px;
+  background-color: rgb(29, 155, 240);
+}
+
+.postButton {
+  padding: 8px 15px;
   background-color: rgb(29, 155, 240);
   border-color: rgba(0, 0, 0, 0);
   border-radius: 18px;
   color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 15px;
+  cursor: pointer;
 }
 .postButton:hover {
   background-color: rgb(26, 140, 216);
-  cursor: pointer;
-}
-
-.uploadButton {
-  border: 0;
-  background-color: transparent;
-}
-
-.uploadButton svg {
-  fill: rgb(29, 155, 240);
 }
