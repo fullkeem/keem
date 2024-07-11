@@ -1,5 +1,6 @@
-import PostForm from "../_components/feed/PostForm";
-import Tab from "../_components/feed/Tab";
+import Post from "../_components/feed/Post";
+import PostForm from "../_components/postForm/PostForm";
+import Tab from "../_components/homeTab/Tab";
 import style from "./home.module.css";
 
 export default function Home() {
@@ -7,6 +8,13 @@ export default function Home() {
     <div className={style.home}>
       <Tab />
       <PostForm />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </div>
   );
 }

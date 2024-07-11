@@ -8,9 +8,11 @@
   cursor: pointer;
   border: none;
   text-align: left;
+  background: none;
 }
-.logOutButton:hover {
-  background-color: rgba(15, 20, 25, 0.1);
+
+.logoutButton:hover {
+  background-color: #2b2b2b;
   border-radius: 33px;
 }
 
@@ -19,12 +21,18 @@
   align-items: center;
 }
 .logoutUserImage img {
-  width: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
 }
 .logoutUserName {
   margin: 0 12px;
+  line-height: 1.2;
 }
 .logoutUserName > div:first-child {
   font-weight: bold;
+}
+
+.logoutUserName > div:last-child {
+  color: #71767b;
 }

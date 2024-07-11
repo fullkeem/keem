@@ -12,6 +12,20 @@ export default function TrendList() {
         <Trend />
         <Trend />
         <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
+        <Trend />
       </div>
     </main>
   );
