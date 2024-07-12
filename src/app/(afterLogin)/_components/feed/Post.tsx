@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import style from "./post.module.css";
 import relativeTime from "dayjs/plugin/relativeTime";
+import PostButton from "./PostButton";
 
 dayjs.extend(relativeTime);
 
@@ -26,7 +27,7 @@ export default function Post() {
       nickname: "GD",
       image: "/gdProfile.jpeg",
     },
-    content: "정대리와 함께 ^^",
+    content: "정대리와 함께 ^^ (근데 나 인턴임ㅎㅎ)",
     createAt: new Date(),
     images: ["/GDWithHD.jpeg"],
   };
@@ -43,7 +44,7 @@ export default function Post() {
               height={40}
             />
           </Link>
-          <div className={style.postShade} />
+          <div className={style.postImageShade} />
         </div>
         <div className={style.postBody}>
           <div className={style.postMeta}>
@@ -62,9 +63,12 @@ export default function Post() {
           <div className={style.postImageSection}>
             {post.images && post.images.length > 0 && (
               <div className={style.postImageSection}>
-                <img src={post.images[0]} alt="" />
+                <img src={post.images[0]} alt="post image" />
               </div>
             )}
+          </div>
+          <div className={style.postActionButton}>
+            <PostButton />
           </div>
         </div>
       </div>

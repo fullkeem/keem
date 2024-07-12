@@ -1,0 +1,107 @@
+.postButtonWrapper {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.postButtonList {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  list-style: none;
+}
+
+.postButtonList > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: rgb(113, 118, 123);
+}
+
+.postButtonList > li > button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  border-radius: 19px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+.postButtonList > li > span {
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.commentButton.commented,
+.commentButton:hover {
+  color: rgb(29, 155, 240);
+}
+
+.commentButton.commented svg,
+.commentButton:hover svg {
+  fill: rgb(29, 155, 240);
+  border-radius: 24px;
+  background-color: rgba(29, 155, 240, 0.01);
+}
+
+.commentButton button {
+  background-color: rgba(29, 155, 240, 0.01);
+}
+
+.commentButton:hover button {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.commentButton.commented svg,
+.commentButton:hover svg {
+  fill: rgb(29, 155, 240);
+}
+
+.commentButton.commented .count,
+.commentButton:hover .count {
+  color: rgb(29, 155, 240);
+}
+
+.repostButton button {
+  background-color: rgba(0, 186, 124, 0.01);
+}
+
+.repostButton:hover button {
+  background-color: rgba(0, 186, 124, 0.1);
+}
+
+.repostButton.reposted svg,
+.repostButton:hover svg {
+  fill: rgb(11, 175, 123);
+}
+
+.repostButton.reposted .count,
+.repostButton:hover .count {
+  color: rgb(11, 175, 123);
+}
+
+.likeButton button {
+  background-color: rgba(249, 24, 128, 0.01);
+}
+
+.likeButton:hover button {
+  background-color: rgba(249, 24, 128, 0.1);
+}
+
+.likeButton.liked svg,
+.likeButton:hover svg {
+  fill: rgb(228, 34, 126);
+}
+
+.likeButton.liked .count,
+.likeButton:hover .count {
+  color: rgb(228, 34, 126);
+}
