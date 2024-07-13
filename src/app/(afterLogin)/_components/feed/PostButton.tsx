@@ -10,11 +10,11 @@ export default function PostButton() {
     liked: true,
   };
 
-  const handleComment = () => {};
+  // const handleComment = () => {};
 
-  const handleRepost = () => {};
+  // const handleRepost = () => {};
 
-  const handleLike = () => {};
+  // const handleLike = () => {};
 
   return (
     <div className={style.postButtonWrapper}>
@@ -25,7 +25,7 @@ export default function PostButton() {
             buttonState.commented && style.commented
           )}
         >
-          <button type="button" onClick={handleComment}>
+          <button type="button">
             <svg
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -37,10 +37,10 @@ export default function PostButton() {
               </g>
             </svg>
           </button>
-          <span className={style.count}>5</span>
+          <div className={style.count}>5</div>
         </li>
         <li className={style.repostButton}>
-          <button type="button" onClick={handleRepost}>
+          <button type="button">
             <svg
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -52,10 +52,10 @@ export default function PostButton() {
               </g>
             </svg>
           </button>
-          <span className={style.count}>3</span>
+          <div className={style.count}>3</div>
         </li>
         <li className={style.likeButton}>
-          <button type="button" onClick={handleLike}>
+          <button type="button">
             <svg
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -67,7 +67,7 @@ export default function PostButton() {
               </g>
             </svg>
           </button>
-          <span className={style.count}>2</span>
+          <div className={style.count}>2</div>
         </li>
       </ul>
     </div>

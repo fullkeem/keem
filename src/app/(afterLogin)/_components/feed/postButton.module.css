@@ -1,12 +1,13 @@
 .postButtonWrapper {
+  flex-shrink: 0;
   width: 100%;
-  margin-top: 12px;
 }
 
 .postButtonList {
   display: flex;
   justify-content: space-between;
   gap: 4px;
+  width: 100%;
   list-style: none;
 }
 
@@ -18,26 +19,19 @@
   color: rgb(113, 118, 123);
 }
 
-.postButtonList > li > button {
+.postButtonList li button {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   width: 34px;
   height: 34px;
   border: 0;
   outline: none;
-  background-color: transparent;
   border-radius: 19px;
-  cursor: pointer;
+  background-color: transparent;
   transition-property: background-color;
   transition-duration: 0.2s;
-}
-
-.postButtonList > li > span {
-  position: absolute;
-  right: 3px;
-  top: 50%;
-  margin-top: -10px;
+  cursor: pointer;
 }
 
 .commentButton.commented,
@@ -49,7 +43,6 @@
 .commentButton:hover svg {
   fill: rgb(29, 155, 240);
   border-radius: 24px;
-  background-color: rgba(29, 155, 240, 0.01);
 }
 
 .commentButton button {
