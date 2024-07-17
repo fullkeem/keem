@@ -1,0 +1,21 @@
+.uploadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(29, 155, 240, 0.01);
+  border: 0;
+  border-radius: 17px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.uploadButton:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.uploadButton svg {
+  fill: rgb(29, 155, 240);
+}
