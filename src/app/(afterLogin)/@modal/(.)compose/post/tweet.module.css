@@ -1,0 +1,168 @@
+.modalBackground {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .modalBackground {
+    background-color: rgba(91, 112, 131, 0.4);
+  }
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(91, 112, 131, 0.4);
+}
+
+.modalBox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 5%;
+  max-width: 80vw;
+  min-width: 600px;
+  border: none;
+  border-radius: 16px;
+  background-color: rgb(var(--background-end-rgb));
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 5px 20px;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  padding-right: 10px;
+}
+
+.closeModal {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.closeModal svg {
+  fill: rgb(239, 243, 244);
+}
+
+.drafts {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(29, 155, 240);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.writing {
+  display: flex;
+  height: auto;
+  min-height: 100px;
+  margin-top: 5px;
+}
+
+.userImg {
+  margin-right: 10px;
+}
+
+.writingBox {
+  flex-grow: 1;
+}
+
+.writingBox textarea {
+  width: 100%;
+  min-height: 100px;
+  padding-top: 8px;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  background-color: transparent;
+  font: inherit;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 8px;
+}
+
+.reply {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(47, 51, 54);
+  color: rgb(29, 155, 240);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.reply svg:last-child {
+  fill: rgb(29, 155, 240);
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.attach {
+  display: flex;
+  align-items: center;
+}
+
+.attach svg {
+  fill: rgb(29, 155, 240);
+}
+
+.postButton {
+  height: 36px;
+  padding: 0 16px;
+  background-color: rgb(29, 155, 240);
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 24px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.postButton:hover {
+  background-color: rgb(26, 140, 216);
+}
+
+.postButton div {
+  text-overflow: unset;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+}
