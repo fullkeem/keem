@@ -1,0 +1,74 @@
+.modalBackground {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .modalBackground {
+    background-color: rgba(91, 112, 131, 0.4);
+  }
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(91, 112, 131, 0.4);
+}
+
+.modalBox {
+  background-color: rgb(var(--background-end-rgb));
+  position: relative;
+  top: 5%;
+  max-width: 80vw;
+  min-width: 600px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.modal {
+  width: 100%;
+}
+
+.modalHeader > svg {
+  color: rgb(239, 243, 244);
+}
+
+.modalBody {
+}
+
+.writing {
+}
+
+.userImg {
+}
+
+.writingBox {
+}
+
+.bottom {
+}
+
+.reply {
+}
+
+.buttonWrapper {
+}
+
+.attach {
+}
+
+.postButton {
+}

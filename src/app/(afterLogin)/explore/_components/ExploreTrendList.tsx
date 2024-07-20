@@ -1,18 +1,9 @@
-"use client";
+import style from "./exploreTrendList.module.css";
+import Trend from "../../_components/trendList/Trend";
 
-import Trend from "./Trend";
-import style from "./trendList.module.css";
-import { usePathname } from "next/navigation";
-
-export default function TrendList() {
-  const pathname = usePathname();
-
-  if (pathname === "/explore") {
-    return null;
-  }
-
+export default function ExploreTrendList() {
   return (
-    <main className={style.container}>
+    <section className={style.container}>
       <div className={style.trend}>
         <h3>Trends for you</h3>
         <Trend />
@@ -36,6 +27,6 @@ export default function TrendList() {
         <Trend />
         <Trend />
       </div>
-    </main>
+    </section>
   );
 }

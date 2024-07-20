@@ -5,14 +5,15 @@ import NavMenu from "./_components/navMenu/NavMenu";
 import LogoutButton from "./_components/logoutButton/LogoutButton";
 import TrendList from "./_components/trendList/TrendList";
 import FollowRecommend from "./_components/followRecommend/FollowRecommend";
-import SearchBar from "./_components/SearchBar";
+import SearchBar from "./_components/search/SearchBar";
 import Logo from "./_components/Logo";
 
 type Props = {
   children: ReactNode;
+  modal: ReactNode;
 };
 
-export default function AfterLoginLayout({ children }: Props) {
+export default function AfterLoginLayout({ children, modal }: Props) {
   return (
     <div className={style.container}>
       <header className={style.leftSectionWrapper}>
@@ -23,8 +24,8 @@ export default function AfterLoginLayout({ children }: Props) {
               <ul>
                 <NavMenu />
               </ul>
-              <Link href="/compose/tweet" className={style.postButton}>
-                게시하기
+              <Link href="/compose/post" className={style.postButton}>
+                Post
               </Link>
             </nav>
             <LogoutButton />
@@ -35,17 +36,16 @@ export default function AfterLoginLayout({ children }: Props) {
         <div className={style.rightSectionInner}>
           <main className={style.main}>{children}</main>
           <section className={style.rightSection}>
-            <div className={style.searchWrapper}>
-              <SearchBar />
-            </div>
+            <SearchBar />
             <TrendList />
             <div className={style.followRecommend}>
-              <h3>팔로우 추천</h3>
+              <h3>Who to follow</h3>
               <FollowRecommend />
             </div>
           </section>
         </div>
       </div>
+      {modal}
     </div>
   );
 }

@@ -1,11 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import { useTabStore } from "@/app/store";
 import style from "./tab.module.css";
+import { usePathname } from "next/navigation";
 
 export default function Tab() {
   const { tab, setTab } = useTabStore();
+  const pathname = usePathname();
+
+  if (pathname === "/explore") {
+  }
 
   const onClickFol = () => {
     setTab("Following");

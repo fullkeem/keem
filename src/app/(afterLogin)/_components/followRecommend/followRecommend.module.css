@@ -1,7 +1,7 @@
 .container {
   padding: 12px 0;
-  height: 66px;
   display: flex;
+  height: 66px;
 }
 
 .userLogo {
