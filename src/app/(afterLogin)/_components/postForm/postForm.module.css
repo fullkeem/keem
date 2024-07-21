@@ -1,6 +1,6 @@
 .postForm {
   display: flex;
-  margin-top: 55px;
+  width: 100%;
   padding: 16px 16px 8px;
   border-color: rgb(239, 243, 244);
   border-bottom-width: 1px;

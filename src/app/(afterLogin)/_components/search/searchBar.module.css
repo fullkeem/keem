@@ -1,18 +1,13 @@
-.marginTop {
-  margin-top: 70px;
-}
-
 .search {
-  position: fixed;
+  display: flex;
+  align-items: center;
+  position: sticky;
   top: 0;
   height: 42px;
-  width: inherit;
   border-radius: 21px;
   background-color: rgb(32, 35, 39);
   margin-top: 5px;
   margin-bottom: 12px;
-  display: flex;
-  align-items: center;
 }
 
 .search svg {
@@ -22,9 +17,10 @@
 
 .search input {
   outline: none;
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   padding: 12px;
   margin-left: 5px;
   font-size: 15px;
+  flex-grow: 1;
 }
