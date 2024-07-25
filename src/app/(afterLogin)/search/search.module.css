@@ -2,7 +2,6 @@
   display: flex;
   align-items: stretch;
   flex-direction: column;
-  width: 600px;
   border: 1px solid rgb(47, 51, 54);
 }
 
@@ -47,7 +46,7 @@
 
 .topFixed {
   position: fixed;
-  width: 600px;
+  width: 599px;
   backdrop-filter: blur(12px);
   border-bottom-width: 1px;
   border-bottom-style: solid;

@@ -1,0 +1,55 @@
+.container {
+  width: inherit;
+  padding-left: 10px;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 42px;
+  width: 500px;
+  margin-top: 7px;
+  margin-bottom: 12px;
+  border-radius: 21px;
+  background-color: rgb(32, 35, 39);
+}
+
+.search > svg {
+  margin-left: 20px;
+  fill: rgb(83, 100, 113);
+}
+
+.search input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  padding: 12px;
+  margin-left: 5px;
+  font-size: 15px;
+  flex-grow: 1;
+}
+
+.cancelButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 13px;
+  min-width: 22px;
+  min-height: 22px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: rgb(29, 155, 240);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background-color: rgb(26, 140, 216);
+}
+
+.cancelButton svg {
+  fill: currentColor;
+}
