@@ -14,6 +14,7 @@
 }
 
 .leftSection {
+  position: relative;
   width: 100%;
 }
 
@@ -88,6 +89,7 @@
 
 .main {
   width: 600px;
+  position: relative;
 }
 
 .rightSection {
@@ -108,4 +110,24 @@
 
 .followRecommend h3 {
   padding-bottom: 12px;
+}
+
+.backButton {
+  width: 34px;
+  height: 34px;
+  color: rgb(239, 243, 244);
+  background-color: transparent;
+  border: none;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.backButton:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.backButton svg {
+  fill: currentColor;
 }
