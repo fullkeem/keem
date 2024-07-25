@@ -1,16 +1,24 @@
+.container {
+  width: inherit;
+  position: sticky;
+  top: 5px;
+}
+
 .search {
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
   height: 42px;
-  border-radius: 21px;
-  background-color: rgb(32, 35, 39);
   margin-top: 5px;
   margin-bottom: 12px;
+  border-radius: 21px;
+  background-color: rgb(32, 35, 39);
 }
 
-.search svg {
+.search:focus {
+  border: 1px solid rgb(29, 155, 240);
+}
+
+.search > svg {
   margin-left: 20px;
   fill: rgb(83, 100, 113);
 }
@@ -23,4 +31,28 @@
   margin-left: 5px;
   font-size: 15px;
   flex-grow: 1;
+}
+
+.cancelButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 13px;
+  min-width: 22px;
+  min-height: 22px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: rgb(29, 155, 240);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background-color: rgb(26, 140, 216);
+}
+
+.cancelButton svg {
+  fill: currentColor;
 }
