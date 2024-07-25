@@ -1,0 +1,64 @@
+.searchContainer {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 600px;
+  border: 1px solid rgb(47, 51, 54);
+}
+
+.postSection {
+  margin-top: 120px;
+}
+
+/* searchTab */
+.homeFixed {
+}
+
+.homeTab {
+  height: 53px;
+  display: flex;
+}
+
+.homeTab > div {
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  position: relative;
+}
+.homeTab a:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.tabIndicator {
+  height: 4px;
+  align-self: center;
+  background-color: rgb(29, 155, 240);
+  min-width: 56px;
+  width: 56px;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 9999px;
+}
+
+/* SearchForm */
+
+.topFixed {
+  position: fixed;
+  width: 600px;
+  backdrop-filter: blur(12px);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-color: rgb(47, 51, 54);
+  z-index: 10;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+}
