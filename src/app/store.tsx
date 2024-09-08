@@ -19,3 +19,13 @@ export const useContentStore = create<ContentState>((set) => ({
   content: "",
   setContent: (value) => set({ content: value }),
 }));
+
+type SearchState = {
+  inputValue: any;
+  setInputValue: (value: any) => void;
+};
+
+export const useSearchStore = create<SearchState>((set) => ({
+  inputValue: "",
+  setInputValue: (value) => set({ inputValue: value }),
+}));
