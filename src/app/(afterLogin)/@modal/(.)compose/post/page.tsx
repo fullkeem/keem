@@ -6,7 +6,7 @@ import style from "./tweet.module.css";
 import { useRouter } from "next/navigation";
 import { useState, useEffect, useRef, useCallback } from "react";
 import ProfileImg from "@/app/(afterLogin)/_components/profileImage/ProfileImg";
-import FileButton from "@/app/(afterLogin)/_components/fileButton/FileButton";
+import FileButton from "@/app/(afterLogin)/_components/postForm/fileButton/FileButton";
 
 export default function TweetModal() {
   const router = useRouter();

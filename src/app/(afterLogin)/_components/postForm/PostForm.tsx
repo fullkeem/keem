@@ -3,8 +3,8 @@
 import { ChangeEventHandler, FormEventHandler } from "react";
 import style from "./postForm.module.css";
 import { useContentStore } from "@/app/store";
-import ProfileImg from "../profileImage/ProfileImg";
-import FileButton from "../fileButton/FileButton";
+import ProfileImg from "./profileImage/ProfileImg";
+import FileButton from "./fileButton/FileButton";
 
 export default function PostForm() {
   const { content, setContent } = useContentStore();
