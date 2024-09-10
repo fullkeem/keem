@@ -43,8 +43,8 @@ export default function Post() {
               width={40}
               height={40}
             />
+            <div className={style.postImageShade} />
           </Link>
-          <div className={style.postImageShade} />
         </div>
         <div className={style.postBody}>
           <div className={style.postMeta}>
