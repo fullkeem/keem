@@ -39,7 +39,12 @@ export default function PostButton() {
           </button>
           <div className={style.count}>5</div>
         </li>
-        <li className={style.repostButton}>
+        <li
+          className={cx(
+            style.repostButton,
+            buttonState.reposted && style.reposted
+          )}
+        >
           <button type="button">
             <svg
               viewBox="0 0 24 24"
@@ -54,7 +59,7 @@ export default function PostButton() {
           </button>
           <div className={style.count}>3</div>
         </li>
-        <li className={style.likeButton}>
+        <li className={cx(style.likeButton, buttonState.liked && style.liked)}>
           <button type="button">
             <svg
               viewBox="0 0 24 24"

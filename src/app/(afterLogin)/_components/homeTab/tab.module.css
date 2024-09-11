@@ -23,8 +23,8 @@
   cursor: pointer;
   position: relative;
 }
-.homeTab a:hover {
-  background-color: rgba(15, 20, 25, 0.1);
+.homeTab li:hover {
+  background-color: rgba(231, 233, 234, 0.1);
 }
 
 .tabIndicator {

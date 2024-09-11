@@ -27,8 +27,10 @@
   font-size: 15px;
   position: relative;
 }
-.homeTab a:hover {
-  background-color: rgba(15, 20, 25, 0.1);
+
+.topTab:hover,
+.latestTab:hover {
+  background-color: rgba(231, 233, 234, 0.1);
 }
 
 .tabIndicator {
@@ -42,11 +44,15 @@
   border-radius: 9999px;
 }
 
+.tabIndicator:hover {
+  background-color: rgba(231, 233, 234, 0.1);
+}
+
 /* SearchForm */
 
 .topFixed {
   position: fixed;
-  width: 599px;
+  width: 598px;
   backdrop-filter: blur(12px);
   border-bottom-width: 1px;
   border-bottom-style: solid;

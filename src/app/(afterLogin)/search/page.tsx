@@ -6,7 +6,7 @@ interface Props {
   searchParams: {
     q: string;
     f?: string;
-    pf: string;
+    pf?: string;
   };
 }
 

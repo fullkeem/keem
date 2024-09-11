@@ -5,7 +5,7 @@ import Picker from "@emoji-mart/react";
 import style from "./tweet.module.css";
 import { useRouter } from "next/navigation";
 import { useState, useEffect, useRef, useCallback } from "react";
-import ProfileImg from "@/app/(afterLogin)/_components/profileImage/ProfileImg";
+import ProfileImg from "@/app/(afterLogin)/_components/postForm/profileImage/ProfileImg";
 import FileButton from "@/app/(afterLogin)/_components/postForm/fileButton/FileButton";
 
 export default function TweetModal() {

@@ -20,11 +20,11 @@ export default function SearchTab() {
   return (
     <div className={style.homeFixed}>
       <div className={style.homeTab}>
-        <div onClick={onClickHot}>
+        <div className={style.topTab} onClick={onClickHot}>
           Top
           <div className={style.tabIndicator} hidden={current === "new"}></div>
         </div>
-        <div onClick={onClickNew}>
+        <div className={style.latestTab} onClick={onClickNew}>
           Latest
           <div className={style.tabIndicator} hidden={current === "hot"}></div>
         </div>

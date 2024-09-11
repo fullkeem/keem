@@ -4,24 +4,27 @@ import Image from "next/image";
 import style from "./post.module.css";
 import relativeTime from "dayjs/plugin/relativeTime";
 import PostButton from "./PostButton";
+import PostArticle from "./PostArticle";
+
+interface User {
+  id: string;
+  nickname: string;
+  image: string;
+}
+
+interface Post {
+  postId: number;
+  user: User;
+  content: string;
+  createAt: Date;
+  images?: string[];
+}
 
 dayjs.extend(relativeTime);
 
 export default function Post() {
-  interface User {
-    id: string;
-    nickname: string;
-    image: string;
-  }
-
-  interface Post {
-    user: User;
-    content: string;
-    createAt: Date;
-    images?: string[];
-  }
-
   const post: Post = {
+    postId: 1,
     user: {
       id: "G-Dragon",
       nickname: "GD",
@@ -33,7 +36,7 @@ export default function Post() {
   };
 
   return (
-    <article className={style.post}>
+    <PostArticle post={post}>
       <div className={style.postWrapper}>
         <div className={style.postUserSection}>
           <Link href={`/${post.user.id}`}>
@@ -72,6 +75,6 @@ export default function Post() {
           </div>
         </div>
       </div>
-    </article>
+    </PostArticle>
   );
 }
