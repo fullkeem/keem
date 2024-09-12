@@ -5,25 +5,13 @@ import style from "./post.module.css";
 import relativeTime from "dayjs/plugin/relativeTime";
 import PostButton from "./PostButton";
 import PostArticle from "./PostArticle";
-
-interface User {
-  id: string;
-  nickname: string;
-  image: string;
-}
-
-interface Post {
-  postId: number;
-  user: User;
-  content: string;
-  createAt: Date;
-  images?: string[];
-}
+import { faker } from "@faker-js/faker";
+import { PostType } from "../../_types/interface";
 
 dayjs.extend(relativeTime);
 
 export default function Post() {
-  const post: Post = {
+  const post: PostType = {
     postId: 1,
     user: {
       id: "G-Dragon",
@@ -32,8 +20,16 @@ export default function Post() {
     },
     content: "정대리와 함께 ^^ (근데 나 인턴임ㅎㅎ)",
     createAt: new Date(),
-    images: ["/GDWithHD.jpeg"],
+    images: [],
   };
+
+  if (Math.random() > 0.5) {
+    post.images?.push({
+      imageId: 1,
+      link: faker.image.urlLoremFlickr(),
+      description: faker.word.sample(),
+    });
+  }
 
   return (
     <PostArticle post={post}>
@@ -66,7 +62,16 @@ export default function Post() {
           <div className={style.postImageSection}>
             {post.images && post.images.length > 0 && (
               <div className={style.postImageSection}>
-                <img src={post.images[0]} alt="post image" />
+                {post.images && post.images.length > 0 && (
+                  <Link
+                    href={`${post.user.id}/status/${post.postId}/photo/${post.images[0].imageId}`}
+                  >
+                    <img
+                      src={post.images[0].link}
+                      alt={post.images[0].description}
+                    />
+                  </Link>
+                )}
               </div>
             )}
           </div>
