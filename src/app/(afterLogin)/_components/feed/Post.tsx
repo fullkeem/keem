@@ -10,7 +10,11 @@ import { PostType } from "../../_types/interface";
 
 dayjs.extend(relativeTime);
 
-export default function Post() {
+type Props = {
+  noImage?: boolean;
+};
+
+export default function Post({ noImage }: Props) {
   const post: PostType = {
     postId: 1,
     user: {
@@ -23,7 +27,7 @@ export default function Post() {
     images: [],
   };
 
-  if (Math.random() > 0.5) {
+  if (Math.random() > 0.5 && !noImage) {
     post.images?.push({
       imageId: 1,
       link: faker.image.urlLoremFlickr(),

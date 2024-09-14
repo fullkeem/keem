@@ -13,6 +13,7 @@ export default function Logo() {
           alt="KEEM.com logo"
           width={100}
           height={100}
+          priority={true}
         />
       </div>
     </Link>
