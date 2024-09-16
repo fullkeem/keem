@@ -10,8 +10,8 @@ export default function CommentForm() {
   const onSubmit = () => {};
   const onChange = () => {};
   const me = {
-    id: "zerohch0",
-    image: "/5Udwvqim.jpg",
+    id: "fullkeem",
+    image: "/KEEM_logo.png",
   };
 
   return (
@@ -25,7 +25,7 @@ export default function CommentForm() {
         <textarea
           value={content}
           onChange={onChange}
-          placeholder="답글 게시하기"
+          placeholder="Post your reply"
         />
         <div className={style.postButtonSection}>
           <div className={style.footerButtons}>
