@@ -1,0 +1,87 @@
+.main {
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  border-left-width: 1px;
+  border-left-color: rgb(47, 51, 54);
+  border-left-style: solid;
+  border-right: 1px;
+  border-right-color: rgb(47, 51, 54);
+  border-right-style: solid;
+  padding: 0 16px;
+}
+
+.messageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.messageHeader h3 {
+  font-size: larger;
+}
+
+.buttonIcons {
+  display: flex;
+}
+
+.newMessageIcon,
+.settingIcon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newMessageIcon svg,
+.settingIcon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentcolor;
+}
+
+.messages {
+  margin-top: 30px;
+}
+
+.searchBox {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  border: 1px solid rgb(51, 54, 57);
+  border-radius: 9999px;
+  padding: 15px;
+}
+
+.searchBox:focus-within {
+  border: 1px solid rgb(29, 155, 240);
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  width: 24px;
+}
+
+.searchIcon svg {
+  height: 20px;
+  color: rgb(113, 118, 123);
+  fill: currentColor;
+}
+
+.searchInput {
+  background-color: transparent;
+}
+
+.searchInput input {
+  border: none;
+  font-size: medium;
+  background-color: transparent;
+  outline: none;
+}
+
+.searchInput input::placeholder {
+  color: rgb(113, 118, 123);
+}
