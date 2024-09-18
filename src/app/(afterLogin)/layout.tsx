@@ -4,10 +4,6 @@ import Logo from "./_components/Logo";
 import style from "./layout.module.css";
 import NavMenu from "./_components/navMenu/NavMenu";
 import LogoutButton from "./_components/logoutButton/LogoutButton";
-import TrendList from "./_components/trendList/TrendList";
-import FollowRecommend from "./_components/followRecommend/FollowRecommend";
-import SearchBar from "./_components/search/SearchBar";
-import SearchFilter from "./_components/searchFilter/SearchFilter";
 
 type Props = {
   children: ReactNode;
@@ -36,14 +32,6 @@ export default function AfterLoginLayout({ children, modal }: Props) {
       <div className={style.rightSectionWrapper}>
         <div className={style.rightSectionInner}>
           <main className={style.main}>{children}</main>
-          <section className={style.rightSection}>
-            <SearchBar />
-            <TrendList />
-            <div className={style.followRecommend}>
-              <h3>Who to follow</h3>
-              <FollowRecommend />
-            </div>
-          </section>
         </div>
       </div>
       {modal}

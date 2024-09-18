@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import style from "../layout.module.css";
+import style from "./components.module.css";
 import KEEM from "/public/keem-white.svg";
 
 export default function Logo() {

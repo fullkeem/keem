@@ -34,25 +34,6 @@
   list-style-type: none;
 }
 
-.logo {
-  display: inline-block;
-  height: 56px;
-  margin-top: 2px;
-}
-
-.logoFill {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.logoFill:hover {
-  background-color: #2b2b2b;
-}
-
 .postButton {
   display: flex;
   justify-content: center;
@@ -89,47 +70,5 @@
 }
 
 .main {
-  position: relative;
-  width: 600px;
-}
-
-.rightSection {
-  position: relative;
-  max-width: 350px;
-  min-height: 0px;
-  margin: 0 20px;
-  flex-grow: 1;
-}
-
-.followRecommend {
-  margin: 12px 0;
-  padding: 12px 16px;
-  border: 1px solid rgb(47, 51, 54);
-  border-radius: 16px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.followRecommend h3 {
-  padding-bottom: 12px;
-}
-
-.backButton {
-  width: 34px;
-  height: 34px;
-  color: rgb(239, 243, 244);
-  background-color: transparent;
-  border: none;
-  border-radius: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.backButton:hover {
-  background-color: rgba(15, 20, 25, 0.1);
-}
-
-.backButton svg {
-  fill: currentColor;
+  width: 100%;
 }

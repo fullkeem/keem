@@ -13,19 +13,22 @@ export default function FollowRecommend() {
   };
 
   return (
-    <div className={style.container}>
-      <div className={style.userLogoSection}>
-        <div className={style.userLogo}>
-          <Image src={user.image} alt={user.id} width={50} height={50} />
+    <article className={style.container}>
+      <h3>Who to follow</h3>
+      <div className={style.followRecommend}>
+        <div className={style.userLogoSection}>
+          <div className={style.userLogo}>
+            <Image src={user.image} alt={user.id} width={50} height={50} />
+          </div>
+        </div>
+        <div className={style.userInfo}>
+          <div className={style.title}>{user.nickname}</div>
+          <div className={style.count}>@{user.id}</div>
+        </div>
+        <div className={style.followButtonSection}>
+          <button onClick={onFollow}>Follow</button>
         </div>
       </div>
-      <div className={style.userInfo}>
-        <div className={style.title}>{user.nickname}</div>
-        <div className={style.count}>@{user.id}</div>
-      </div>
-      <div className={style.followButtonSection}>
-        <button onClick={onFollow}>Follow</button>
-      </div>
-    </div>
+    </article>
   );
 }

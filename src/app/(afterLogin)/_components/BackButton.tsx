@@ -1,6 +1,6 @@
 "use client";
 
-import style from "@/app/(afterLogin)/layout.module.css";
+import style from "./components.module.css";
 import { useRouter } from "next/navigation";
 
 export default function BackButton() {
