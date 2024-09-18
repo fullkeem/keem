@@ -1,11 +1,8 @@
-import dayjs from "dayjs";
 import style from "./messages.module.css";
-import relativeTime from "dayjs/plugin/relativeTime";
-
-dayjs.extend(relativeTime);
+import ChatRoom from "./_components/ChatRoom";
+import UserList from "./_components/UserList";
 
 export default function Messages() {
-  const user = {};
   return (
     <main className={style.main}>
       <div className={style.messageHeader}>
@@ -40,9 +37,7 @@ export default function Messages() {
             <input type="text" placeholder="Search Direct Messages" />
           </div>
         </div>
-        <div className={style.messageList}>
-          <div className={style.messageBox}></div>
-        </div>
+        <UserList />
       </section>
     </main>
   );
