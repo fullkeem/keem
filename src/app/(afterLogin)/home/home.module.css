@@ -1,9 +1,15 @@
+.container {
+  display: flex;
+  width: 1050px;
+  justify-content: space-between;
+}
+
 .home {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  flex-grow: 1;
-  width: 100%;
+
+  width: 600px;
   border-color: rgb(47, 51, 54);
   border-right-width: 1px;
   border-left-width: 1px;
@@ -19,4 +25,9 @@
   .main {
     border-color: rgb(47, 51, 54);
   }
+}
+
+.rightSection {
+  width: 350px;
+  margin-right: 70px;
 }
