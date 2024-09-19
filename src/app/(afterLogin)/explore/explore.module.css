@@ -1,7 +1,32 @@
 .container {
   position: relative;
   display: flex;
+  flex-direction: row;
+  width: 1050px;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
   flex-direction: column;
-  width: inherit;
-  border: 1px solid rgb(47, 51, 54);
+  align-items: stretch;
+
+  width: 600px;
+  border-color: rgb(47, 51, 54);
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+@media all and (min-width: 687px) {
+  .main {
+    width: 600px;
+  }
+}
+
+.follow {
+  position: relative;
+  width: 350px;
+  margin-top: 20px;
+  margin-right: 70px;
 }
