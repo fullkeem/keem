@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 1050px;
   justify-content: space-between;
 }
 
@@ -24,9 +23,10 @@
   }
 }
 
-.follow {
+.rightSection {
   position: relative;
   width: 350px;
+  height: 9999px;
   margin-top: 20px;
   margin-right: 70px;
 }

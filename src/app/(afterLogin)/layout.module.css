@@ -65,7 +65,7 @@
 .rightSectionInner {
   display: flex;
   flex-grow: 1;
-  width: 100%;
+  width: 1050px;
   height: 100%;
 }
 

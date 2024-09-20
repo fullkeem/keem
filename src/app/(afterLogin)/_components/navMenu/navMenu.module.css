@@ -15,6 +15,11 @@
   font-size: 20px;
 }
 
+@media all and (max-width: 1325px) {
+  .navList > div {
+    display: none;
+  }
+}
 .icon {
   width: 1.75rem;
   height: 1.75rem;

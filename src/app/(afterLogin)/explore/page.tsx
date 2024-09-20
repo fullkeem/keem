@@ -6,14 +6,9 @@ import FollowRecommend from "../_components/followRecommend/FollowRecommend";
 
 export default function Explore() {
   return (
-    <div className={style.container}>
-      <div className={style.main}>
-        <ExploreHeader />
-        <ExploreTrendList />
-      </div>
-      <div className={style.follow}>
-        <FollowRecommend />
-      </div>
+    <div className={style.main}>
+      <ExploreHeader />
+      <ExploreTrendList />
     </div>
   );
 }

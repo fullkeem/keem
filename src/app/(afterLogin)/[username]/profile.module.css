@@ -1,7 +1,20 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rightSection {
+  width: 350px;
+  margin-right: 70px;
+}
+
 .profileContainer {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 600px;
   min-height: 0px;
 }
 

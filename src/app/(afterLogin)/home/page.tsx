@@ -6,21 +6,16 @@ import RightSection from "../_components/RightSection/RightSection";
 
 export default function Home() {
   return (
-    <div className={style.container}>
-      <div className={style.home}>
-        <Tab />
-        <PostForm />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-      </div>
-      <div className={style.rightSection}>
-        <RightSection />
-      </div>
+    <div className={style.home}>
+      <Tab />
+      <PostForm />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </div>
   );
 }

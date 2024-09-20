@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import style from "./followRecommend.module.css";
 
 export default function FollowRecommend() {
+  const pathname = usePathname();
   const onFollow = () => {};
 
   const user = {
