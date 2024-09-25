@@ -27,13 +27,15 @@ export default function RightSection() {
         </section>
       );
     } else {
-      <section className={style.rightSection}>
-        <SearchBar />
-        <div className={style.trendFollow}>
-          <FollowRecommend />
-          <TrendList />
-        </div>
-      </section>;
+      return (
+        <section className={style.rightSection}>
+          <SearchBar />
+          <div className={style.trendFollow}>
+            <FollowRecommend />
+            <TrendList />
+          </div>
+        </section>
+      );
     }
   };
 

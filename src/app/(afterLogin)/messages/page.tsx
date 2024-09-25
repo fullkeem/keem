@@ -1,5 +1,4 @@
 import style from "./messages.module.css";
-import ChatRoom from "./_components/ChatRoom";
 import UserList from "./_components/UserList";
 
 export default function Messages() {

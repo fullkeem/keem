@@ -2,21 +2,24 @@ import Link from "next/link";
 import Image from "next/image";
 import style from "./profile.module.css";
 import Post from "../_components/feed/Post";
+import { StaticImageData } from "next/image";
+import profileImage from "/public/gdProfile.jpeg";
 import BackButton from "../_components/BackButton";
+import backgroundImage from "/public/GDWithHD.jpeg";
 
 interface User {
   id: string;
   nickname: string;
-  profileImage: string;
-  backgroudImage?: string;
+  profileImg: StaticImageData;
+  backgroundImg?: StaticImageData;
 }
 
 export default function Profile() {
   const user: User = {
-    id: "G-Dragon",
-    nickname: "GD",
-    profileImage: "/gdProfile.jpeg",
-    backgroudImage: "/GDWithHD.jpeg",
+    id: "full_KEEM",
+    nickname: "KEEM",
+    profileImg: profileImage,
+    backgroundImg: backgroundImage,
   };
 
   return (
@@ -31,33 +34,36 @@ export default function Profile() {
         </div>
       </div>
       <div className={style.profileBody}>
-        바디 부분
         <div className={style.myInfo}>
-          내 정보
-          <div className={style.background}>
-            <img
-              src={user.backgroudImage}
+          <Link
+            className={style.background}
+            href={`${user.nickname}/header_photo`}
+          >
+            <Image
+              src={backgroundImage}
               alt="배경사진"
               className={style.backgroundImg}
+              width={598}
+              height={200}
             />
-          </div>
+          </Link>
           <div className={style.introduce}>
-            <div>
-              <img
-                src={user.profileImage}
+            <div className={style.profileImgBox}>
+              <Image
+                src={profileImage}
                 alt="프로필"
                 className={style.profileImg}
               />
             </div>
           </div>
         </div>
-        {/* <div className={style.feedBox}>
+        <div className={style.feedBox}>
           <Post />
           <Post />
           <Post />
           <Post />
           <Post />
-        </div> */}
+        </div>
       </div>
     </div>
   );
