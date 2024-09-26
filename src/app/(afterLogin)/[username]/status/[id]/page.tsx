@@ -1,5 +1,7 @@
 import BackButton from "@/app/(afterLogin)/_components/BackButton";
 import style from "./SinglePost.module.css";
+import Post from "@/app/(afterLogin)/_components/feed/Post";
+import CommentForm from "./_components/CommentForm";
 
 export default function SinglePost() {
   return (
@@ -9,6 +11,10 @@ export default function SinglePost() {
           <BackButton />
           Post
         </div>
+      </div>
+      <div className={style.post}>
+        <Post />
+        <CommentForm />
       </div>
     </div>
   );

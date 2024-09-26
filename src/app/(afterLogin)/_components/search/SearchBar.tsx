@@ -6,7 +6,11 @@ import { useRouter, usePathname } from "next/navigation";
 import style from "./searchBar.module.css";
 import SearchFilter from "../searchFilter/SearchFilter";
 
-export default function SearchBar() {
+type Props = {
+  q?: string;
+};
+
+export default function SearchBar({ q }: Props) {
   const pathname = usePathname();
   const { inputValue, setInputValue } = useSearchStore();
   const inputRef = useRef<HTMLInputElement>(null);
