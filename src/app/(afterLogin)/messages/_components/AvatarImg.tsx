@@ -8,7 +8,7 @@ export default function AvatarImg() {
   const [avatar, setAvatar] = useState("");
 
   useEffect(() => {
-    setAvatar(faker.image.avatar());
+    setAvatar(faker.image?.avatar());
   }, []);
 
   return (
