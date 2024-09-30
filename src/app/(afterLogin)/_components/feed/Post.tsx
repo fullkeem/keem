@@ -7,6 +7,7 @@ import PostButton from "./PostButton";
 import PostArticle from "./PostArticle";
 import { faker } from "@faker-js/faker";
 import { PostType } from "../../_types/interface";
+import PostImages from "./PostImage";
 
 dayjs.extend(relativeTime);
 
@@ -28,11 +29,28 @@ export default function Post({ noImage }: Props) {
   };
 
   if (Math.random() > 0.5 && !noImage) {
-    post.images?.push({
-      imageId: 1,
-      link: faker.image.urlLoremFlickr(),
-      description: faker.word.sample(),
-    });
+    post.images?.push(
+      {
+        imageId: 1,
+        link: faker.image.urlLoremFlickr(),
+        description: faker.word.sample(),
+      },
+      {
+        imageId: 2,
+        link: faker.image.urlLoremFlickr(),
+        description: faker.word.sample(),
+      },
+      {
+        imageId: 3,
+        link: faker.image.urlLoremFlickr(),
+        description: faker.word.sample(),
+      },
+      {
+        imageId: 4,
+        link: faker.image.urlLoremFlickr(),
+        description: faker.word.sample(),
+      }
+    );
   }
 
   return (
@@ -59,23 +77,14 @@ export default function Post({ noImage }: Props) {
             </Link>
             <span className={style.postDate}>
               {" "}
-              {dayjs(post.createAt).fromNow(true)}
+              {dayjs(post.createAt).format("MMM DD")}
             </span>
           </div>
           <div className={style.postContent}>{post.content}</div>
           <div className={style.postImageSection}>
             {post.images && post.images.length > 0 && (
-              <div className={style.postImageSection}>
-                {post.images && post.images.length > 0 && (
-                  <Link
-                    href={`${post.user.id}/status/${post.postId}/photo/${post.images[0].imageId}`}
-                  >
-                    <img
-                      src={post.images[0].link}
-                      alt={post.images[0].description}
-                    />
-                  </Link>
-                )}
+              <div>
+                <PostImages post={post} />
               </div>
             )}
           </div>
